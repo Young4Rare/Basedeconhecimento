@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7ff 0%, #ffd4f5 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #00bfff 0%, #ff1493 100%);
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 191, 255, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.95;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.search-box {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 3px solid #00bfff;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #ff1493;
+    box-shadow: 0 6px 20px rgba(255, 20, 147, 0.3);
+    transform: scale(1.02);
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+.search-icon {
+    font-size: 24px;
+}
+
+.category {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 191, 255, 0.15);
+    border-left: 5px solid #ff1493;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 20, 147, 0.2);
+}
+
+.category h2 {
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #e0f7ff 0%, #ffe0f5 100%);
+    margin: 0;
+    color: #ff1493;
+    font-size: 1.4em;
+    border-bottom: 2px solid #00bfff;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-list li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.article-list li:last-child {
+    border-bottom: none;
+}
+
+.article-list a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #00bfff;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.article-list a:hover {
+    background-color: #f0f9ff;
+    border-left-color: #ff1493;
+    color: #ff1493;
+    padding-left: 25px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    color: #666;
+    background: rgba(0, 191, 255, 0.1);
+    border-top: 2px solid #00bfff;
+    margin-top: 40px;
+}
